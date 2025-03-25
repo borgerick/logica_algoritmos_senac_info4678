@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Divisão Janta</title>
+    </head>
+
+
+<body>
+
+
+    <input  type = "text" id="NumPessoa" value="Numero pessoas"></br>
+    <input  type = "text" id="Valor" value="Valor total"></br></br>
+    <button onclick="exibeDadoDigitado()">Click</button>
+
+
+    <script>
+        function exibeDadoDigitado() {
+            var NumPessoa = document.getElementById("NumPessoa").value;
+            var Valor = document.getElementById("Valor").value;
+
+
+        alert (Math.round( Valor / NumPessoa ));
+
+
+
+       }
+
+    </script>
+    
+     
+    </body>
+</html>
