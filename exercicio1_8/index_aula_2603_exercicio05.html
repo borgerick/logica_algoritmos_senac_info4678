@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercico05</title>
+    </head>
+
+
+<body>
+
+
+    <input  type = "text" id="nota01"></br>
+    <input  type = "text" id="nota02"></br></br>
+    <button onclick="exibeDadoDigitado()">Click</button>
+
+
+    <script>
+        function exibeDadoDigitado() {
+            var nota01 = parseFloat(document.getElementById("nota01").value);
+            var nota02 = parseFloat(document.getElementById("nota02").value);
+            var soma = ((nota01 + nota02) / 2);
+
+        alert ("A média entre " + nota01 + " e " + nota02 + " é igual a " + soma );
+        
+ 
+       }
+
+    </script>
+    
+     
+    </body>
+</html>

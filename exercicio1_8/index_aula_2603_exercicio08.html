@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercico07</title>
+    </head>
+
+
+<body>
+
+
+    <input  type = "text" id="info"></br>
+    <button onclick="exibeDadoDigitado()">Click</button>
+
+
+    <script>
+        function exibeDadoDigitado() {
+            var info = parseFloat(document.getElementById("info").value);
+            var soma01 = info * 10;
+            var soma02 = soma01 * 10
+            var soma03 = soma02 * 10;
+            var soma04 = soma03 * 10;
+            var soma05 = soma04 * 10;
+            var soma06 = soma05 * 10;
+
+        alert ("A distancia " + info + "Km corresponde a: " + "\n" +
+            soma01 + "Hm "  + "\n" +
+            soma02 + "Dam " + "\n" +
+            soma03 + "M "   + "\n" +
+            soma04 + "Dm "  + "\n" +
+            soma05 + "Cm "  + "\n" +
+            soma06 + "Mm ");
+
+        
+ 
+       }
+
+    </script>
+    
+     
+    </body>
+</html>
