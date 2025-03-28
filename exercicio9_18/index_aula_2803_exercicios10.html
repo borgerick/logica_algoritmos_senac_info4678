@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercico10</title>
+    </head>
+
+
+<body>
+
+
+    <input  type = "text" id="Largura" value="Largura"></br>
+    <input  type = "text" id="Altura" value="Altura"></br>
+    <button onclick="exibeDadoDigitado()">Click</button>
+
+
+    <script>
+        function exibeDadoDigitado() {
+            var info = parseFloat(document.getElementById("Largura").value);
+            var info2 = parseFloat(document.getElementById("Altura").value);
+            var soma = (info * info2);
+            var soma2 = soma / 2;
+
+
+        alert ("Area a ser pintada: " + soma + "m2" + "\n" +
+               "Quantidade de tinta: " + soma2 + "L");
+
+        
+ 
+       }
+
+    </script>
+    
+     
+    </body>
+</html>

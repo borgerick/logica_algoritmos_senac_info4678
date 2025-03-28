@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercico10</title>
+    </head>
+
+
+<body>
+
+
+    <input  type = "text" id="km" value="km"></br>
+    <input  type = "text" id="dias" value="dias"></br>
+    <button onclick="exibeDadoDigitado()">Click</button>
+
+
+    <script>
+        function exibeDadoDigitado() {
+            var info = parseFloat(document.getElementById("km").value);
+            var info2 = parseFloat(document.getElementById("dias").value);
+            var soma = ((info * info2)*0.20);
+            var soma2 = (90 + soma)
+
+
+        alert ("Total a pagar: " + soma2 );
+
+        
+ 
+       }
+
+    </script>
+    
+     
+    </body>
+</html>

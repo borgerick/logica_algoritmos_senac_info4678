@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercico09</title>
+    </head>
+
+
+<body>
+
+
+    <input  type = "text" id="Real" value="Real"></br>
+    <input  type = "text" id="Dolar" value="Dolar"></br>
+    <button onclick="exibeDadoDigitado()">Click</button>
+
+
+    <script>
+        function exibeDadoDigitado() {
+            var info = parseFloat(document.getElementById("Real").value);
+            var info2 = parseFloat(document.getElementById("Dolar").value);
+            var soma = parseFloat(info / info2);
+
+
+        alert ("Dolar = " + soma + "\n" +
+               "Reais = " + info);
+
+        
+ 
+       }
+
+    </script>
+    
+     
+    </body>
+</html>

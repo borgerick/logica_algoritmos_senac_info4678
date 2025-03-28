@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercico13</title>
+    </head>
+
+
+<body>
+
+
+    <input  type = "text" id="Valor" value="Salario"></br>
+    <button onclick="exibeDadoDigitado()">Click</button>
+
+
+    <script>
+        function exibeDadoDigitado() {
+            var info = parseFloat(document.getElementById("Valor").value);
+            var soma = (info * 0.15);
+            var soma2 = (info  + soma);
+ 
+
+
+        alert ("Salario: " + info + "\n" +
+               "Aumento: " + soma + "\n" +
+               "Novo Salario: " + soma2 );
+
+        
+ 
+       }
+
+    </script>
+    
+     
+    </body>
+</html>
