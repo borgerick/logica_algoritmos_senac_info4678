@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercico10</title>
+    </head>
+
+
+<body>
+
+
+    <input  type = "text" id="A" value="A"></br>
+    <input  type = "text" id="B" value="B"></br>
+    <input  type = "text" id="C" value="C"></br>
+    <button onclick="exibeDadoDigitado()">Click</button>
+
+
+    <script>
+        function exibeDadoDigitado() {
+            var info = parseFloat(document.getElementById("A").value);
+            var info2 = parseFloat(document.getElementById("B").value);
+            var info3 = parseFloat(document.getElementById("C").value);
+            var soma = ((info2 * 2) - ( 4 * info * info3));
+
+
+
+        alert ("Δ = b 2 - 4ac" + "\n" +
+               "Δ = (" + info2 + "*" +"2) - (4" + info + "*" + info3 + ")" +"\n" +
+               "Δ = " + soma + "\n" );
+
+        
+ 
+       }
+
+    </script>
+    
+     
+    </body>
+</html>

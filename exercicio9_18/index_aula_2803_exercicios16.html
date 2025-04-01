@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercico16</title>
+    </head>
+
+
+<body>
+
+
+    <input  type = "text" id="cigarros" value="cigarros"></br>
+    <input  type = "text" id="anos" value="anos"></br>
+    <button onclick="exibeDadoDigitado()">Click</button>
+
+
+    <script>
+        function exibeDadoDigitado() {
+            var info = parseFloat(document.getElementById("cigarros").value);
+            var info2 = parseFloat(document.getElementById("anos").value);
+            var soma = info2 * 365; // Dias fumados
+            var soma2 = soma * info // Numero de cigarros por dia em todos esses anos
+            var soma3 = soma2 * 10; // Minutos perdidos de vida
+            var soma4 = soma3 / 60; // Horas perdidas de vida
+            var soma5 = soma4 / 24; // Dias perdidos de vida
+            
+
+
+        alert ( "Dias fumados: " + soma + "\n" +
+                "Total de cigarros fumado em " + info2 + " anos: " + soma2 + "\n" +
+                            
+
+                "Dias de vida perdida: " + soma5);
+
+
+       }
+
+       
+    </script>
+    
+     
+    </body>
+</html>
