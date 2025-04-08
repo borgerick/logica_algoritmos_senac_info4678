@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicio21</title>
+    </head>
+
+<body>
+
+    <input  type = "text" id="Ano" value="Ano"></br>
+    <button onclick="exibeDadoDigitado()">Calcular</button>
+
+    <script>
+        function exibeDadoDigitado(){
+            var Ano = parseInt(document.getElementById("Ano").value);
+
+
+            if(Ano % 4 === 0){
+                alert("Esse ano é Bissexto " + Ano);
+            }else{
+                alert("Esse ano não é Bissexto " + Ano);
+
+            }
+        
+        }
+           
+       
+
+    </script>
+    
+     
+    </body>
+</html>
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicio20</title>
+    </head>
+
+<body>
+
+    <input  type = "text" id="Num" value="Numero"></br>
+    <button onclick="exibeDadoDigitado()">Calcular</button>
+
+    <script>
+        function exibeDadoDigitado(){
+            var Num = parseInt(document.getElementById("Num").value);
+
+
+            if(Num % 2 === 0){
+                alert("Numero par: " + Num);
+            }else{
+                alert("Numero impar: " + Num);
+
+            }
+        
+        }
+           
+       
+
+    </script>
+    
+     
+    </body>
+</html>
+

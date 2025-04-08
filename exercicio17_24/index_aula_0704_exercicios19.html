@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicio19</title>
+    </head>
+
+<body>
+
+    <input  type = "text" id="nome" value="Nome"></br>
+    <input  type = "text" id="nota01" value="Nota 01"></br>
+    <input  type = "text" id="nota02" value="Nota 02"></br></br>
+    <button onclick="exibeDadoDigitado()">Calcular</button>
+
+    <script>
+        function exibeDadoDigitado(){
+            var nome = document.getElementById("nome").value;
+            var nota01 = parseFloat(document.getElementById("nota01").value);
+            var nota02 = parseFloat(document.getElementById("nota02").value);
+            var media = ( nota01 + nota02 ) / 2;
+
+            if(media >= 7){
+                alert("O aluno "+ nome +" teve um bom aproveitamento com a média de " + media + ".");
+            }else{
+                alert("O aluno "+ nome + " não teve um bom aproveitamento com a média de " + media + ".");
+
+            }
+        
+        }
+           
+       
+
+    </script>
+    
+     
+    </body>
+</html>
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicio18</title>
+    </head>
+
+<body>
+
+    <input  type = "text" id="ano" value=""></br></br>
+    <button onclick="exibeDadoDigitado()">Calcular</button>
+
+    <script>
+        function exibeDadoDigitado(){
+            var ano = Number(document.getElementById("ano").value);
+            var soma = 2025 - ano;
+
+            if(soma > 16){
+                alert("Você pode votar ");
+            }else{
+                alert("Você não pode votar ");
+
+            }
+        
+        }
+           
+       
+
+    </script>
+    
+     
+    </body>
+</html>
+
