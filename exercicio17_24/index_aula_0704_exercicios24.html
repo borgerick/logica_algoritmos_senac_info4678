@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicio24</title>
+    </head>
+
+<body>
+
+    <input  type = "text" id="KM" value="Distancia em KM"></br></br>
+    <button onclick="exibeDadoDigitado()">Calcular</button>
+
+    <script>
+        function exibeDadoDigitado(){
+            var KM = parseFloat(document.getElementById("KM").value);
+                        
+
+            if( KM <= 200){
+                var ValorKMmenor = (KM * 0.50);
+                alert("Olá sua viagem vai custar " + ValorKMmenor);
+            }else{
+                var ValorKMmaior = (KM * 0.45);
+                alert("Olá sua viagem vai custar " + ValorKMmaior);
+            }
+        
+        }
+           
+       
+
+    </script>
+    
+     
+    </body>
+</html>
+

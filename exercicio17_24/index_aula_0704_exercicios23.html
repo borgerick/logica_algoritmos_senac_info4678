@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicio23</title>
+    </head>
+
+<body>
+
+    <input  type = "text" id="Nome" value="Nome"></br>
+    <input  type = "text" id="Sexo" value="Sexo"></br>
+    <input  type = "text" id="Valor" value="Valor da Compra"></br></br>
+    <button onclick="exibeDadoDigitado()">Calcular</button>
+
+    <script>
+        function exibeDadoDigitado(){
+            var Nome = document.getElementById("Nome").value;
+            var Sexo = document.getElementById("Sexo").value;
+            var Valor = parseFloat(document.getElementById("Valor").value);
+                        
+
+            if(Sexo == "Feminino"){
+                var DescontoFeminino = (Valor - (Valor * 0.13));
+                alert("Olá " + Nome + " o valor da sua compra com desconto é: " + DescontoFeminino);
+            }else{
+                var DescontoMasculino = (Valor - (Valor * 0.05));
+                alert("Olá " + Nome + " o valor da sua compra com desconto é: " + DescontoMasculino);
+
+            }
+        
+        }
+           
+       
+
+    </script>
+    
+     
+    </body>
+</html>
+

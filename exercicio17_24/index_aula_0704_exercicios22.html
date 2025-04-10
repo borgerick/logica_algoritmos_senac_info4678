@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Exercicio21</title>
+        <title>Exercicio22</title>
     </head>
 
 <body>
@@ -14,12 +14,12 @@
     <script>
         function exibeDadoDigitado(){
             var Ano = parseInt(document.getElementById("Ano").value);
+            var Idade = 2025 - Ano;
 
-            //Essa condição do IF com "% 4 === 0" verifica se a condição ANO é divisível por 4.
-            if(Ano % 4 === 0){
-                alert("Esse ano é Bissexto " + Ano);
+            if(Idade < 18){
+                alert("Faltam " + (18 - Idade) + " para você se alistar");
             }else{
-                alert("Esse ano não é Bissexto " + Ano);
+                alert("Passou " + (Idade - 18) + " anos do seu alistamento");
 
             }
         
