@@ -8,9 +8,9 @@
 
 <body>
 
-    <input  type = "text" id="LadoA" value="LadoA"></br>
-    <input  type = "text" id="LadoB" value="LadoB"></br>
-    <input  type = "text" id="LadoC" value="LadoC"></br></br>
+    <input  type = "number" id="LadoA" value="LadoA"></br>
+    <input  type = "number" id="LadoB" value="LadoB"></br>
+    <input  type = "number" id="LadoC" value="LadoC"></br></br>
     <button onclick="exibeDadoDigitado()">Calcular</button>
 
     <script>
@@ -19,22 +19,17 @@
             var LadoB = parseFloat(document.getElementById("LadoB").value);
             var LadoC = parseFloat(document.getElementById("LadoC").value);
 
-            var condicao = (LadoA + LadoB > LadoC);
-            var condicao2 = (LadoA + LadoC > LadoB);
-            var condicao3 = (LadoB + LadoC > LadoA);
+            var condicao = (LadoC < (LadoA + LadoB ));
+            var condicao2 = (LadoB < (LadoA + LadoC));
+            var condicao3 = (LadoA < (LadoB + LadoC));
 
                                     
-// Aqui usei o "SE" igual do EXCEL com mais de uma condição        
-            if( condicao == true){
-                alert("É um triangulo");
-            }else if(condicao2 == true){
-                alert("É um triangulo");
-            }else if(condicao3 == true){
-                alert("É um triangulo");
-            }else{
-                alert("Não é um triangulo");  
+           if( condicao == false){
+             alert("Não é um triangulo");
+           }else{
+               alert("É um triangulo");  
                 
-            }
+           }
 // Como está lendo: Se condicao >< "true" parte para proximo IF, se não parte para ELSE.
         
         }
