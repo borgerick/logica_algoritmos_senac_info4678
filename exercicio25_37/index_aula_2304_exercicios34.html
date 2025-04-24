@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicio34</title>
+    </head>
+
+<body>
+
+    <input  type = "Altura" id="Altura" value="Altura"></br>
+    <input  type = "Peso" id="Peso" value="Peso"></br></br>
+    <button onclick="exibeDadoDigitado()">Calcular</button>
+
+    <script>
+        function exibeDadoDigitado(){
+            var Altura = parseFloat(document.getElementById("Altura").value);
+            var Peso = parseFloat(document.getElementById("Peso").value);
+
+            var IMC = Peso / (Altura * Altura);
+
+            var AbaixoPeso = IMC < 18.5;
+            var PesoIdeal = IMC >= 18.5 && IMC < 24.9;
+            var SobrePeso = IMC >= 25 && IMC < 29.9;
+            var Obesidade = IMC >= 30 && IMC < 39.9;
+            var ObesidadeMorbida = IMC >= 40;
+        
+
+           if( AbaixoPeso ==  true){
+                alert("Abaixo do peso");
+              }else if( PesoIdeal == true){
+                alert("Peso ideal");
+            }else if( SobrePeso == true){
+                alert("Sobrepeso"); 
+            }else if( Obesidade == true){
+                alert("Obesidade"); 
+           }else{
+               alert("Obesidade mórbida");  
+                
+           }
+        }
+      
+        
+           
+       
+
+    </script>
+    
+     
+    </body>
+</html>
+

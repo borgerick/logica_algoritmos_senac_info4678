@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicio26</title>
+    </head>
+
+<body>
+
+    <input  type = "number" id="Nota01"></br>
+    <input  type = "number" id="Nota02"></br></br>
+    <button onclick="exibeDadoDigitado()">Calcular</button>
+
+    <script>
+        function exibeDadoDigitado(){
+            var Nota01 = parseFloat(document.getElementById("Nota01").value);
+            var Nota02 = parseFloat(document.getElementById("Nota02").value);
+
+            var media = (Nota01 + Nota02) / 2;
+        
+
+
+           if( media < 5){
+               alert("REPROVADO");
+              }else if( media >= 5 && media <= 7){
+               alert("RECUPERAÇÃO");
+           }else{
+               alert("APROVADO");  
+                
+           }
+      
+        }
+           
+       
+
+    </script>
+    
+     
+    </body>
+</html>
+

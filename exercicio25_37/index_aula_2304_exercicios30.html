@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicio30</title>
+    </head>
+
+<body>
+
+    <input  type = "number" id="LadoA" value="LadoA"></br>
+    <input  type = "number" id="LadoB" value="LadoB"></br>
+    <input  type = "number" id="LadoC" value="LadoC"></br></br>
+    <button onclick="exibeDadoDigitado()">Calcular</button>
+
+    <script>
+        function exibeDadoDigitado(){
+            var LadoA = parseFloat(document.getElementById("LadoA").value);
+            var LadoB = parseFloat(document.getElementById("LadoB").value);
+            var LadoC = parseFloat(document.getElementById("LadoC").value);
+
+            var condicao = (LadoA == LadoB == LadoC ); // EQUILÁTERO
+            var condicao2 = (LadoA != LadoB != LadoC); // ESCALENO
+            var condicao3 = (LadoA == LadoB || LadoB == LadoC) || (LadoA == LadoC); // ISÓSCELES
+
+                                    
+           if( condicao == true){ 
+              alert("É um triangulo equilátero");
+           }else if( condicao2 == true){
+             alert("É um triangulo escaleno");
+           }else{
+               alert("É um triangulo isósceles");  
+                
+           }
+        
+        }
+           
+       
+
+    </script>
+    
+     
+    </body>
+</html>
+

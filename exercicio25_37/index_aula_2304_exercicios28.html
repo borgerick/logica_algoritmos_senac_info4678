@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicio28</title>
+    </head>
+
+<body>
+
+    <input  type = "number" id="LadoX"></br>
+    <input  type = "number" id="LadoY"></br></br>
+    <button onclick="exibeDadoDigitado()">Calcular</button>
+
+    <script>
+        function exibeDadoDigitado(){
+            var LadoX = parseFloat(document.getElementById("LadoX").value);
+            var LadoY = parseFloat(document.getElementById("LadoY").value);
+
+            var area = LadoX * LadoY;
+        
+
+           if( area < 100){
+               alert("TERRENO POPULAR");
+              }else if( area >= 100 && area < 500){
+               alert("TERRENO MASTER");
+           }else{
+               alert("TERRENO VIP");  
+                
+           }
+      
+        }
+           
+       
+
+    </script>
+    
+     
+    </body>
+</html>
+

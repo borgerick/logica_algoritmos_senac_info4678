@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicio31</title>
+    </head>
+
+<body>
+
+    <input  type = "Jogador01" id="Jogador01" ></br>
+    <input  type = "Jogador02" id="Jogador02" ></br></br>
+    <button onclick="exibeDadoDigitado()">Calcular</button>
+
+    <script>
+        function exibeDadoDigitado(){
+            var Jogador01 = document.getElementById("Jogador01").value;
+            var Jogador02 = document.getElementById("Jogador02").value;
+
+            //empates
+            var variavel01 = Jogador01 == "Pedra" && Jogador02 == "Pedra"; 
+            var variavel02 = Jogador01 == "Tesoura" && Jogador02 == "Tesoura"; 
+            var variavel03 = Jogador01 == "Papel" && Jogador02 == "Papel"; 
+            //wins
+            var variavel04 = Jogador01 == "Pedra" && Jogador02 == "Papel";
+            var variavel05 = Jogador01 == "Pedra" && Jogador02 == "Tesoura";
+            var variavel06 = Jogador01 == "Papel" && Jogador02 == "Tesoura";
+
+            var variavel07 = Jogador02 == "Pedra" && Jogador01 == "Papel";
+            var variavel08 = Jogador02 == "Pedra" && Jogador01 == "Tesoura";
+            var variavel09 = Jogador02 == "Papel" && Jogador01 == "Tesoura";
+
+
+                                    
+           if( condicao == true){ 
+              alert("É um triangulo equilátero");
+           }else if( condicao2 == true){
+             alert("É um triangulo escaleno");
+           }else{
+               alert("É um triangulo isósceles");  
+                
+           }
+        
+        }
+           
+       
+
+    </script>
+    
+     
+    </body>
+</html>
+
