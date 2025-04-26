@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicio33</title>
+    </head>
+
+<body>
+
+    <input  type = "text" id="ValorImovel" value="Valor do Imovel"></br>
+    <input  type = "text" id="Salario" value="Salario"></br>
+    <input  type = "text" id="Anos" value="Anos"></br></br>
+    <button onclick="exibeDadoDigitado()">Calcular</button>
+
+    <script>
+        function exibeDadoDigitado(){
+            var ValorImovel = parseFloat(document.getElementById("ValorImovel").value);
+            var Salario = parseFloat(document.getElementById("Salario").value);
+            var Anos = parseFloat(document.getElementById("Anos").value);
+
+            var CondicaoSalario = (Salario * 0.30);
+            var ParcelaImovel = ValorImovel / (Anos * 12);
+
+            var Aprovacao = ParcelaImovel <= CondicaoSalario;
+
+                                    
+           if( Aprovacao == true){ 
+              alert("Financiamento Aprovado");
+           }else{
+               alert("Financiamento Reprovado, tente aumentar a quantidade de anos");  
+                
+           }
+        
+        }
+           
+       
+
+    </script>
+    
+     
+    </body>
+</html>
+

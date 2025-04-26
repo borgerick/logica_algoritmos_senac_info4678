@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicio35</title>
+    </head>
+
+<body>
+
+    <input  type = "text" id="TipoCarro" value="Tipo de Carro"></br>
+    <input  type = "value" id="Dias" value="Quantidade de Dias"></br>
+    <input  type = "value" id="KM" value="Distancia em KM"></br></br>
+    <button onclick="exibeDadoDigitado()">Calcular</button>
+
+    <script>
+        function exibeDadoDigitado(){
+            var TipoCarro = document.getElementById("TipoCarro").value;
+            var Dias = parseInt(document.getElementById("Dias").value);
+            var KM = parseFloat(document.getElementById("KM").value);
+
+
+            //Carro Popular       
+            if( TipoCarro == "Popular"){
+                var ValorDia = Dias * 90;
+                var ValorKM = KM <= 100 ? (KM * 0.20) : (KM * 0.10);
+                valorTotal = ValorDia + ValorKM;
+            }else if( TipoCarro == "Luxo"){ 
+                var ValorDia = Dias * 150;
+                var ValorKM = KM <= 100 ? (KM * 0.30) : (KM * 0.25);
+                valorTotal = ValorDia + ValorKM;
+            }else{
+                alert("Tipo de carro inválido. Por favor, insira 'Popular' ou 'Luxo'.");
+            } 
+            
+
+                alert("Olá sua viagem de " + Dias + " dias, vai custar " + valorTotal);
+           }
+        
+           
+       
+
+    </script>
+    
+     
+    </body>
+</html>
+

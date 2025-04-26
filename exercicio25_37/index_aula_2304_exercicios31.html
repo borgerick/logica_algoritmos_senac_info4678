@@ -8,8 +8,8 @@
 
 <body>
 
-    <input  type = "Jogador01" id="Jogador01" ></br>
-    <input  type = "Jogador02" id="Jogador02" ></br></br>
+    <input  type = "text" id="Jogador01" value="Jogador 01" ></br>
+    <input  type = "text" id="Jogador02" value="Jogador 02"></br></br>
     <button onclick="exibeDadoDigitado()">Calcular</button>
 
     <script>
@@ -22,22 +22,26 @@
             var variavel02 = Jogador01 == "Tesoura" && Jogador02 == "Tesoura"; 
             var variavel03 = Jogador01 == "Papel" && Jogador02 == "Papel"; 
             //wins
-            var variavel04 = Jogador01 == "Pedra" && Jogador02 == "Papel";
-            var variavel05 = Jogador01 == "Pedra" && Jogador02 == "Tesoura";
-            var variavel06 = Jogador01 == "Papel" && Jogador02 == "Tesoura";
+            var variavel04 = Jogador01 == "Pedra" && Jogador02 == "Tesoura";
+            var variavel05 = Jogador01 == "Papel" && Jogador02 == "Pedra";
+            var variavel06 = Jogador01 == "Tesoura" && Jogador02 == "Papel";
 
-            var variavel07 = Jogador02 == "Pedra" && Jogador01 == "Papel";
-            var variavel08 = Jogador02 == "Pedra" && Jogador01 == "Tesoura";
-            var variavel09 = Jogador02 == "Papel" && Jogador01 == "Tesoura";
+            var variavel07 = Jogador02 == "Pedra" && Jogador01 == "Tesoura";
+            var variavel08 = Jogador02 == "Papel" && Jogador01 == "Pedra";
+            var variavel09 = Jogador02 =="Tesoura" && Jogador01 == "Papel";
 
+            var Empate = ((variavel01 == true || variavel02 == true || variavel03 == true))
+            var Vencedor01 = (variavel04 == true || variavel05 == true || variavel06 == true);  
+            var Vencedor02 = (variavel07 == true || variavel08 == true || variavel09 == true)
+           
 
                                     
-           if( condicao == true){ 
-              alert("É um triangulo equilátero");
-           }else if( condicao2 == true){
-             alert("É um triangulo escaleno");
+           if( Empate == true){ 
+              alert("Empate");
+           }else if( Vencedor01 == true){
+             alert("Jogador01 ganhou");
            }else{
-               alert("É um triangulo isósceles");  
+               alert("Jogador02 ganhou");  
                 
            }
         
