@@ -8,25 +8,30 @@
 
 <body>
 
-    <input  type = "text" id="Num" value="Numero"></br></br>
+    <input  type = "value" id="Horas" value="Quantidade de Horas"></br></br>
     <button onclick="exibeDadoDigitado()">Calcular</button>
 
     <script>
         function exibeDadoDigitado(){
-            var Num = parseInt(document.getElementById("Num").value);
+  
+            var Horas = parseFloat(document.getElementById("Horas").value);
 
-            var Sortei = Math.floor(Math.random() * 5) + 1;
-
-            if (Num === Sortei) {
-        alert("Parabéns! Você acertou.");
-        } else {
-            alert("Errou! O número sorteado foi " + Sortei);
-
+              
+            if( Horas <= 10){
+                var PontuacaoMenor = (2 * Horas) * 0.05;
+                alert("Você teve " + Horas + " de ativade fisica e ganhou R$" + PontuacaoMenor);
+            }else if( Horas >= 20){ 
+                var PontuacaoMaior = (10 * Horas) * 0.05;
+                alert("Você teve " + Horas + " de ativade fisica e ganhou R$" + PontuacaoMaior);
             
-
-           }
-        
+            }else{
+                var PontuacaoMedio = (5 * Horas) * 0.05;
+                alert("Você teve " + Horas + " de ativade fisica e ganhou R$" + PontuacaoMedio);
+            } 
+            
         }
+        
+           
        
 
     </script>

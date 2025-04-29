@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicio37</title>
+    </head>
+
+<body>
+
+    <input  type = "text" id="Salario" value="Salário"></br>
+    <input  type = "text" id="Genero" value="Gênero"></br>
+    <input  type = "text" id="Anos" value="Anos trabalhados"></br></br>
+    <button onclick="exibeDadoDigitado()">Calcular</button>
+
+    <script>
+        function exibeDadoDigitado(){
+  
+            var Salario = parseFloat(document.getElementById("Salario").value);
+            var Genero = document.getElementById("Genero").value;
+            var Anos = parseInt(document.getElementById("Anos").value);
+
+            if(Genero == "Feminino" && Anos <= 15){
+                var Aumento15 = (Salario * 0.05) + Salario;
+                alert("Seu aumento foi de 5%. Seu novo salário é: R$ " + Aumento15);
+            }else if(Genero == "Feminino" && Anos >= 16 && Anos <= 19){
+                var Aumento12 = (Salario * 0.12) + Salario;
+                alert("Seu aumento foi de 12%. Seu novo salário é: R$ " + Aumento12);
+            }else if(Genero == "Feminino" && Anos >= 20){ 
+                var Aumento20 = (Salario * 0.23) + Salario;
+                alert("Seu aumento foi de 23%. Seu novo salário é: R$ " + Aumento20);
+
+            }
+             
+            if(Genero == "Masculino" && Anos <= 20){
+                var Aumento20M = (Salario * 0.03) + Salario;
+                alert("Seu aumento foi de 3%. Seu novo salário é: R$ " + Aumento20M);
+            }else if(Genero == "Masculino" && Anos >= 19 && Anos <= 29){
+                var Aumento13M = (Salario * 0.13) + Salario;
+                alert("Seu aumento foi de 13%. Seu novo salário é: R$ " + Aumento13M);
+            }else if(Genero == "Masculino" && Anos >= 30){ 
+                var Aumento25M = (Salario * 0.25) + Salario;
+                alert("Seu aumento foi de 25%. Seu novo salário é: R$ " + Aumento25M);
+            
+            }
+            
+        }
+        
+           
+       
+
+    </script>
+    
+     
+    </body>
+</html>
+
