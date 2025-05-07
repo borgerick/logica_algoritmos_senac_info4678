@@ -9,19 +9,26 @@
 
 <body>
 
+
+    <input  type = "text" id="Ano"></br></br>
+    <button onclick="exibeDadoDigitado()">Click</button>
+
+
     <script>
         window.onload  = function(){
 
-            
-             var descricao = " ";
-             for (var i = 1; i <= 30; i++){
-                if (i % 4 == 0){
-                    continue;
-                 descricao = descricao + i + " ";
-             }
+            var descricao = " ";
 
-            console.log(descricao + "Acabou!");
+            for (let i = 30; i >= 1; i--) {
+                if (i % 4 === 0) {
+                    descricao += "[" + i + "}";                
+                } else {
+                    descricao += i + " ";
+                   }
+                }
+            console.log(descricao);
        }
+
     </script>
     
      
