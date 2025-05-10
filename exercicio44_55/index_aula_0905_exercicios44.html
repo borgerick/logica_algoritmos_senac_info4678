@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio44</title>
+</head>
+<body>
+
+    <input type="text" id="Num01" id="Valor inicial"><br>
+    <input type="text" id="Num02" id="Incremento"><br>
+    <input type="text" id="Num03" id="Valor final"><br><br>
+    <button onclick="exibeDadoDigitado()">Calcular</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function exibeDadoDigitado(){
+            var Num01 = parseInt(document.getElementById("Num01").value);
+            var Num02 = parseInt(document.getElementById("Num02").value);
+            var Num03 = parseInt(document.getElementById("Num03").value);
+
+            var resultado = "Contagem: ";
+
+             for (var i = Num01; i <= Num03; i += Num02) {
+                resultado += i + " ";
+            }
+
+            resultado += "Acabou!";
+
+             console.log(resultado);
+
+ 
+        }
+    </script>
+    
+</body>
+</html>
