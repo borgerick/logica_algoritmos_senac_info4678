@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 50</title>
+    </head>
+
+
+<body>
+
+
+    <script>
+
+            var numeros = "";
+            var MaiorQue5 = 0;
+            var DivididoPor3 = 0;
+
+            for (var i = 0; i < 20; i++) {
+                var sorteio = Math.floor(Math.random() * 11);
+   
+            if (i === 0) {
+                listaNumeros = "" + sorteio;
+            } else {
+                listaNumeros = listaNumeros + ", " + sorteio;
+            }
+        }
+
+            if (sorteio > 5) {
+                MaiorQue5 = MaiorQue5 + 1;
+            }
+
+            if (sorteio % 3 == 0) {
+                DivididoPor3 = DivididoPor3 + 1;
+        }
+    
+
+        document.write("Números sorteados: " + listaNumeros + "<br>");
+        document.write("Quantidade de números acima de 5: " + MaiorQue5 + "<br>");
+        document.write("Quantidade de números divisíveis por 3: " + DivididoPor3 + "<br>");
+
+       console.log("Sorteio:", listaNumeros);
+
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 51</title>
+    </head>
+
+
+<body>
+
+
+    <script>
+
+            var MaiorPreco = null;
+            
+
+            for (var i = 1; i < 8; i++) {
+                var preco = parseFloat(prompt("Digite o preço do " + i ));
+            }
+
+            if (MaiorPreco === null || preco > MaiorPreco) {
+                MaiorPreco = preco;
+            }
+    
+
+
+        document.write("Maior preço digitado: R$ " + MaiorPreco.toFixed(2) + "<br>");
+
+    console.log(MaiorPreco);
+
+    </script>
+
+    </body>
+</html>

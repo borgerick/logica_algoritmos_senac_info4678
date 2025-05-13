@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Exercicio49</title>
+        <title>Exercício 49</title>
     </head>
 
 
@@ -12,19 +12,27 @@
 
     <script>
 
-            var soma = 0;
-    
-            for (var i = 1; i <= 6; i++){
-                var num = parseInt(prompt("Digite o " + i + "º número:"));
-                soma = soma + i;
+        var pares = 0;
+        var impares = 0;
+
+        for (var i = 1; i <= 6; i++) {
+            var num = parseInt(prompt("Digite o " + i + "º número:"));
+
+            if (num % 2 === 0) {
+                pares++;
+                } else {
+                impares++;
             }
 
-            
-            console.log(soma);
-       
+    }
 
+            // Mostra na tela e no console
+            document.write("Quantidade de números pares: " + pares + "<br>");
+            document.write("Quantidade de números ímpares: " + impares + "<br>");
+
+            console.log("Pares: " + pares);
+            console.log("Ímpares: " + impares);
     </script>
-    
-     
+
     </body>
 </html>
