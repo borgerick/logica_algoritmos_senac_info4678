@@ -12,24 +12,30 @@
 
     <script>
 
-            var MaiorPreco = null;
+            var MaiorPreco = 0;
+            var MenorPreco;
             
 
-            for (var i = 1; i < 8; i++) {
-                var preco = parseFloat(prompt("Digite o preço do " + i ))
-                var MaiorPreco = Math.max(preco);
+            for (var i = 1; i <= 8; i++) {
+                var preco = parseFloat(prompt("Digite o preço do " + i + "º produto:"));
+            
+            if ( i === 1) {
+                MenorPreco = preco;
+            }
+            if (preco > MaiorPreco) {
+                MaiorPreco = preco;
+            }
+            if (preco < MenorPreco) {
+                MenorPreco = preco;
             }
 
-
-            if (MaiorPreco === null || preco > MaiorPreco) {
-                MaiorPreco = Math.max(MaiorPreco, preco);
-            }
+        }
     
 
 
         document.write("Maior preço digitado: R$ " + MaiorPreco.toFixed(2) + "<br>");
 
-    console.log(MaiorPreco);
+    //console.log(MaiorPreco);
 
     </script>
 

@@ -12,7 +12,7 @@
 
     <script>
 
-            var numeros = "";
+            var NumerosSorteio = "";
             var MaiorQue5 = 0;
             var DivididoPor3 = 0;
 
@@ -20,26 +20,26 @@
                 var sorteio = Math.floor(Math.random() * 11);
    
             if (i === 0) {
-                listaNumeros = "" + sorteio;
+                NumerosSorteio = sorteio;
             } else {
-                listaNumeros = listaNumeros + ", " + sorteio;
+                NumerosSorteio = NumerosSorteio + ", " + sorteio;
             }
-        }
+        
 
             if (sorteio > 5) {
                 MaiorQue5 = MaiorQue5 + 1;
-            }
-
-            if (sorteio % 3 == 0) {
+            } 
+            
+            if(sorteio % 3 === 0) {
                 DivididoPor3 = DivididoPor3 + 1;
+            }
         }
-    
 
-        document.write("Números sorteados: " + listaNumeros + "<br>");
+        document.write("Números sorteados: " + NumerosSorteio + "<br>");
         document.write("Quantidade de números acima de 5: " + MaiorQue5 + "<br>");
         document.write("Quantidade de números divisíveis por 3: " + DivididoPor3 + "<br>");
 
-       console.log("Sorteio:", listaNumeros);
+       //console.log("Sorteio:", NumerosSorteio);
 
     </script>
 

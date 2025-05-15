@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 52</title>
+    </head>
+
+
+<body>
+
+
+    <script>
+
+            var MediaIdade = 0;
+            var MaiorIdade = 0;
+            var Menorde5Anos = 0;
+            var MaisDe18 = 0;
+            var somaIdades = 0;
+             
+
+            for (var i = 1; i <= 10; i++) {
+                var idade = parseInt(prompt("Digite a idade " + i + ":"));
+
+                somaIdades = somaIdades + idade;
+            
+                if ( idade > 17) {
+                    MaisDe18 = MaisDe18 + 1;
+            }
+                if ( idade < 5) {
+                    Menorde5Anos = Menorde5Anos + 1;
+            }
+                if ( idade > MaiorIdade) {
+                    MaiorIdade = idade;
+            }
+
+        }
+
+        var MediaIdade = somaIdades / 10;
+    
+        document.write("Média de idade é: " + MediaIdade + "<br>");
+        document.write("Quantidade de pessoas maior de 18 anos: " + MaisDe18 + "<br>");
+        document.write("Quantidade de pessoas menor de 5 anos: " + Menorde5Anos + "<br>");
+        document.write("Maior idade: " + MaiorIdade + "<br>");
+
+
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 53</title>
+    </head>
+
+
+<body>
+
+
+    <script>
+
+            var Homens = 0;
+            var Mulheres = 0;
+            var SomaIdade = 0;
+            var SomaIdadeHomens = 0;
+            var MulheresEntre20e54 = 0;
+             
+
+            for (var i = 1; i <= 5; i++) {
+                var idade = parseInt(prompt("Digite a idade da pessoa: " + i + ":"));
+                var sexo = prompt("Digite o sexo da pessoa: " + i + ":");
+
+                //SEXO = M masculino ou F feminino
+
+                somaIdades = somaIdades + idade;
+            
+                if ( sexo == "M") {
+                    Homens = Homens + 1;
+                    SomaIdadeHomens = SomaIdadeHomens + idade;
+                    } else if ( sexo == "F") {
+                        Mulheres = Mulheres + 1;
+                        if ( idade > 20) {
+                            MulheresEntre20e54 = MulheresEntre20e54 + 1;
+                        }
+                    } else
+                if ( id = Mulher) {
+                    MaiorIdade = idade;
+            }
+
+        }
+
+        var MediaIdade = somaIdades / 10;
+    
+        document.write("Média de idade é: " + MediaIdade + "<br>");
+        document.write("Quantidade de pessoas maior de 18 anos: " + MaisDe18 + "<br>");
+        document.write("Quantidade de pessoas menor de 5 anos: " + Menorde5Anos + "<br>");
+        document.write("Maior idade: " + MaiorIdade + "<br>");
+
+
+    </script>
+
+    </body>
+</html>
