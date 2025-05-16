@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 55</title>
+    </head>
+
+
+<body>
+
+
+
+    <script>
+        function fandon() {
+            var sorteio = Math.floor(Math.random() * 10) + 1;
+             var tentativas = 4;
+            var acertou = false;
+
+            for (var i = 1; i <= tentativas; i++) {
+                var entrada = prompt("Tentativa " + i + " de 4: Digite um número de 1 a 10");
+                var Num = parseInt(entrada);
+
+
+                if (Num === sorteio) {
+                    alert("Você acertou o número " + sorteio + "!");
+                    acertou = true;
+                    break;
+                } else {
+                    alert("Errou! Você ainda tem " + (tentativas - i) + " tentativa(s).");
+            }
+        }
+
+            if (!acertou) {
+                alert("Suas tentativas acabaram. O número sorteado era " + sorteio + ".");
+            }
+        }
+
+        window.onload = fandon; // Chama a função somente depois do carregamento da página
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 54</title>
+    </head>
+
+
+<body>
+
+
+    <script>
+
+
+            var SomaAlturas = 0;
+            var MaisDe90 = 0;
+            var MenosDe50 = 0;
+            var MaisDe190eMaisDe100 = 0;
+            var MenosDE50eMenosDe160 = 0;
+
+             
+
+            for (var i = 1; i <= 7 ; i++) {
+                var Peso = parseFloat(prompt("Digite o peso da pessoa: " + i + ":"));
+                var Altura = parseFloat(prompt("Digite a altura da pessoa: " + i + ":"));
+
+                
+                SomaAlturas = SomaAlturas + Altura;
+
+
+                if( Peso > 90) {
+                    MaisDe90 = MaisDe90 + 1;
+                }
+                if ( Peso > 100 && Altura > 1.90) {
+                    MaisDe190eMaisDe100 = MaisDe190eMaisDe100 + 1;
+                }
+                if ( Peso < 50 && Altura < 1.60) {
+                    MenosDE50eMenosDe160 = MenosDE50eMenosDe160 + 1;
+                }
+         
+            }
+                
+        var MediaAltura = SomaAlturas / 7;
+        
+        
+        document.write("Media de Altura " + MediaAltura + "<br>");
+        document.write("Pessoas com mais de 90KG: " + MaisDe90 + "<br>");
+        document.write("Pessoas com menos de 50KG e menos de 1.60M: " + MenosDE50eMenosDe160 + "<br>");
+        document.write("Pessoas com mais de 100KG e mais de 1.90M:  " + MaisDe190eMaisDe100 + "<br>");
+
+
+    </script>
+
+    </body>
+</html>
