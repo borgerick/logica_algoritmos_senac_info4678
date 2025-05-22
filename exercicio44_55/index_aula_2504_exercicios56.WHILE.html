@@ -13,20 +13,24 @@
 
     <script>
          
+    window.onload = function() {
+        
         var soma = 0;
         var numero = 0;
 
         while (numero != 1111) {
             var digite = parseInt(prompt("Digite um número:"));
-            numero = parseInt(digite);
-
-        if (numero != 1111) {
+            numero = digite;
+            if (numero != 1111) {
             soma += numero;
         }
 
     }
 
+
         document.write("A soma dos numeros é: " + soma + "<br>");
+
+}
 
     </script>
 
