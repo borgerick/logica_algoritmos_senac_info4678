@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 79</title>
+    </head>
+
+
+<body>
+
+
+
+    <script>
+         
+        window.onload = function() {
+           
+            var n = 10
+            var numeros = [];
+            var Pares = [];
+            var Impares = [];
+            var QuantidadePares = 0;
+            
+            for(var i = 0; i < n; i++) {
+                var numero = parseInt(prompt("Digite Numero " + (i + 1)));
+                numeros.push(numero);
+                if (numero % 2 == 0) {
+                    Pares.push(numero);
+                    QuantidadePares++;
+                } else {
+                    Impares.push(numero);
+                }
+            }
+
+            console.log(numeros);
+            console.log("Numeros Pares" + Pares);
+            console.log("Numeros Impares" + Impares);
+            console.log("Quantidade de Numeros Pares: " + QuantidadePares);
+               
+        }
+        
+
+            
+
+    </script>
+
+    </body>
+</html>
